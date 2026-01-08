@@ -1,0 +1,8 @@
+{
+  "name": "Elite Thumbnail Master",
+  "description": "The ultimate AI-powered YouTube thumbnail generator and channel strategy dashboard. Build high-CTR visuals and viral concepts using Gemini and Veo.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Elite Thumbnail Master | AI Visuals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --safe-top: env(safe-area-inset-top, 0px);
+            --safe-bottom: env(safe-area-inset-bottom, 0px);
+            --yt-red: #FF0000;
+            --yt-dark: #0F0F0F;
+            --yt-surface: #1F1F1F;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--yt-dark);
+            color: #FFFFFF;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        .glass-dark {
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .yt-shadow {
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.15);
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: var(--yt-dark);
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: var(--yt-red);
+            border-radius: 10px;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: flex;
+            animation: marquee 30s linear infinite;
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(255, 0, 0, 0.1) 0%, transparent 70%);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.24.12",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+<body class="selection:bg-red-500/30">
+    <div id="root"></div>
+</body>
+</html>
